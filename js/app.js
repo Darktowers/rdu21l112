@@ -6,8 +6,10 @@ requirejs.config({
     "baseUrl": "js/lib",
     "paths": {
       "app": "../app",
-      "jquery": "jquery-1.9.1.min"
-    }
+      "jquery": "jquery-1.9.1.min",
+      "owl" : "owl.carousel.min"
+    },
+    
 });
 
 // Load the main app module to start the app

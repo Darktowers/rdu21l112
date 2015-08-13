@@ -1,23 +1,30 @@
 @import "normalize.styl"
 @import "owl.carousel.styl"
+@import "owl.theme.styl"
 azulPrincipal = #1E4354
+azulSemiClaro = #0C72A3
+azulClaro  = #D1F3FD
+html
+body
+	height 100%
 .ContenedorImagen
 	top 0
 	z-index -1
 	background-size: 100% 100%;
 	width: 100%;
+	height 100%
 	&-img
 		background-repeat: no-repeat;
-		background-position: 30% 20%;
 		background-size: 100% 100%;
 		width: 100%;
+		height 100%
 .ContenedorPrincipal
 	position relative
 	width 100%
 	text-align: center;
 	height auto
-	display inline-block
 	overflow hidden
+	height 100%
 	&-logo
 		position absolute
 		margin 0
@@ -63,11 +70,19 @@ azulPrincipal = #1E4354
 		position absolute
 		left 0
 		bottom 0
+		z-index 1
 	&-bannerlema
 		img
 			border: 0;
 			width: 100%;
 			max-width 500px	
+	&-bannerLinea
+		width 100%
+		height .5em
+		background-color azulSemiClaro
+		position absolute
+		top 55%
+		z-index -1
 	.menu-movil
 		display inline-block
 		position absolute
@@ -83,6 +98,14 @@ azulPrincipal = #1E4354
 			margin-bottom 7px
 			background-color azulPrincipal
 			display block
+.SliderPrincipal
+	width: 1170px;
+	height 400px
+	background-color #D1F3FD
+	.owl-carousel
+		width 100%
+		.item
+			width: 1170px;
     		
 		
 			
