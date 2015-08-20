@@ -27,6 +27,10 @@ define(["jquery","owl.carousel.min"], function($) {
 	    	animateOut: 'fadeOut',
 		  	items:1,
 		    margin:30,
+		    nav: false,
+		     dots:false,
+		      navigation : false,
+		      pagination : false,
 		    loop:true,
 		    stagePadding:30,
 		    smartSpeed:450,
@@ -38,14 +42,41 @@ define(["jquery","owl.carousel.min"], function($) {
 		var owl2 = $('#owl-demo-s');
 	owl2.owlCarousel({
 	    	
-		  	items:1,
+		  	items:3,
 		    margin:30,
 		    loop:true,
+		    nav: false,
+		     dots:false,
+		      navigation : false,
+		      pagination : false,
 		    stagePadding:30,
 		    smartSpeed:450,
 		    autoplay:true,
 		    autoplayTimeout:5000,
-		    autoplayHoverPause:true
+		    autoplayHoverPause:true,
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		
+		        },
+		        600:{
+		            items:2,
+		        
+		        },
+		        1000:{
+		            items:3,
+		           
+		        }
+		    }
+
+
+
+
+
+
+
+
 
 	});
 });
